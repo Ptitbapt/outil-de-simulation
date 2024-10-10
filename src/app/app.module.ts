@@ -33,7 +33,7 @@ import { FormsModule } from '@angular/forms';
         FooterComponent,
         ScenarioTertiaireComponent,
         ValidationHypothesesCalculComponent,
-        BuildingInfoComponent
+        BuildingInfoComponent,
         FaconnageLotComponent
 
   ],
