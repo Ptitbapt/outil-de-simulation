@@ -1,3 +1,22 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.Page {
+  flex: 1;
+}
+
+
+
 /* --------------- BOARD MANAGEMENT --------------- */
 
 .path-directory {
@@ -132,9 +151,4 @@ h1 {
 .simulations-table .highlight-grey {
   background-color: grey;
   color: white;
-}
-
-.simulations-table .bordered {
-  border-left: 2px solid black;
-  border-right: 2px solid black;
 }
