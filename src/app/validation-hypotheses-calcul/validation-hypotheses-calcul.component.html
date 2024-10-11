@@ -1,130 +1,97 @@
+<body>
+  <div class="container">
+      <app-header></app-header>
 
-<div class="container">
+      <div class="Page">
+          <!-- Sous-titre -->
+          <h2 class="path-directory">{{ pathsDirectory }}<span class="highlight">{{ actualDirectory }}</span></h2>
 
-    <app-header></app-header>
-  
-  
-    <div class="Page">
-      <!-- Sous-titre -->
-      <h2 class="path-directory">{{ pathsDirectory }}<span class="highlight">{{ actualDirectory }}</span></h2>
-    
-       <!-- Boutons d'action -->
-<div class="board-management">
-  <app-building-info></app-building-info>
-  <div class="inline-block">
-    <div class="filter-container">
-      <div class="previous-step">
-        <p class="btn-label">< Vers l'étape précédente</p>
-        <button class="btn-filtre btn-filtre-base">Façonnage des lots</button>
-      </div>
-      <div class="hypothesis-input">
-        <p>Saisie des hypothèses</p>
-        <div class="button-with-checkbox-container">
-          <div class="button-with-checkbox">
-            <input type="checkbox" id="checkbox2">
-            <label for="checkbox2"></label>
-            <button class="btn-filtre-checkbox btn-filtre-base">1. Travaux</button>
-          </div>  
-          <div class="button-with-checkbox">
-            <input type="checkbox" id="checkbox2">
-            <label for="checkbox2"></label>
-            <button class="btn-filtre-checkbox btn-filtre-base">2. Relocations</button>
+          <!-- Boutons d'action -->
+          <div class="board-management">
+              <app-building-info></app-building-info>
+              <div class="inline-block">
+                  <div class="filter-container">
+                      <div class="previous-step">
+                          <p class="btn-label">< Vers l'étape précédente</p>
+                          <button class="btn-filtre btn-filtre-base">Façonnage des lots</button>
+                      </div>
+                      <div class="hypothesis-input">
+                          <p>Saisie des hypothèses</p>
+                          <div class="button-with-checkbox-container">
+                              <div class="button-with-checkbox">
+                                  <input type="checkbox" id="checkbox2">
+                                  <label for="checkbox2"></label>
+                                  <button class="btn-filtre-checkbox btn-filtre-base">1. Travaux</button>
+                              </div>
+                              <div class="button-with-checkbox">
+                                  <input type="checkbox" id="checkbox2">
+                                  <label for="checkbox2"></label>
+                                  <button class="btn-filtre-checkbox btn-filtre-base">2. Relocations</button>
+                              </div>
+                              <div class="button-with-checkbox">
+                                  <input type="checkbox" id="checkbox2">
+                                  <label for="checkbox2"></label>
+                                  <button class="btn-filtre-checkbox btn-filtre-base">3. Gel</button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="next-step">
+                          <p class="btn-label">> Vers l'étape suivante</p>
+                          <button class="btn-filtre btn-filtre-base">Synthèse du scénario</button>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="button-with-checkbox">
-            <input type="checkbox" id="checkbox2">
-            <label for="checkbox2"></label>
-            <button class="btn-filtre-checkbox btn-filtre-base">3. Gel</button>
-          </div>  
-        </div>
-      </div>
-      <div class="next-step">
-        <p class="btn-label">> Vers l'étape suivante</p>
-        <button class="btn-filtre btn-filtre-base">Synthèse du scénario</button>
-      </div>
-    </div>
-  </div>
-</div>
 
-        
-      
-  
-      <!-- Tableau -->
-      <table class="simulations-table">
-        <thead>
-          <tr>
-            <th>Sélection</th>
-            <th>Scénario</th>
-            <th>Période <br> simulée</th>
-            <th>Type</th>
-            <th>Périmètre</th>
-            <th>Auteur</th>
-            <th>Contributeurs</th>
-            <th>Dernière <br>modif.</th>
-            <th>Rdtm <br>simulé <br> (5ème année)</th>
-            <th>Statut</th>
-            <th>Commentaire</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><input type="checkbox"></td>
-            <td>CT_Amsterdam</td>
-            <td>2023-2027</td>
-            <td>Com. Tertiaire</td>
-            <td>Amsterdam</td>
-            <td><img src="assets/user1.png" alt="Auteur" class="author-img"></td>
-            <td><img src="assets/contributor1.png" alt="Contributeur" class="contributor-img"></td>
-            <td>Hier 18:10</td>
-            <td>2.56%</td>
-            <td>Pré-validé</td>
-            <td>Commentaire libre</td>
-            <td>
-              <button><img src="assets/Edit.png" class="mat-icon"></button>
-              <button><img src="assets/Look.png" class="mat-icon"></button>
-              <button><img src="assets/Share.png" class="mat-icon"></button>
-           
-            </td>
-          </tr>
-          <tr>
-            <td><input type="checkbox"></td>
-            <td>CT_Amsterdam</td>
-            <td>2023-2027</td>
-            <td>Com. Tertiaire</td>
-            <td>Amsterdam</td>
-            <td><img src="assets/user1.png" alt="Auteur" class="author-img"></td>
-            <td></td>
-            <td>24/06/2024 16:30</td>
-            <td>2.60%</td>
-            <td>Brouillon</td>
-            <td>Commentaire libre</td>
-            <td>
-              <button><img src="assets/Edit.png" class="mat-icon"></button>
-              <button><img src="assets/Look.png" class="mat-icon"></button>
-              <button><img src="assets/Share.png" class="mat-icon"></button>
-            </td>
-          </tr>
-          <tr>
-            <td><input type="checkbox"></td>
-            <td>P_Planete</td>
-            <td>2023-2027</td>
-            <td>Patrimoine</td>
-            <td>Planete A </td>
-            <td><img src="assets/user1.png" alt="Auteur" class="author-img"></td>
-            <td></td>
-            <td>05/06/2024 10:22</td>
-            <td>4,55%</td>
-            <td>Brouillon</td>
-            <td>Commentaire libre</td>
-            <td>
-              <button><img src="assets/Edit.png" class="mat-icon"></button>
-              <button><img src="assets/Look.png" class="mat-icon"></button>
-              <button><img src="assets/Share.png" class="mat-icon"></button>
-            </td>
-          </tr>
-  
-        </tbody>
-      </table>
-    </div>
-  
-    <app-footer></app-footer>
+          <table class="simulations-table">
+              <thead>
+                  <tr>
+                      <th>Locataire</th>
+                      <th>Nb Lots</th>
+                      <th>N° Lot</th>
+                      <th>Type de Lot</th>
+                      <th>Etage</th>
+                      <th>Surface Louable (m²)</th>
+                      <th>Disponibilité (fin bail​/dispo​ non loué)​</th>
+                      <th class="bordered">Stratégie Appliquée</th>
+                      <th class="highlight-orange">Date de départ du locataire</th>
+                      <th class="highlight-orange">Durée travaux (mois)</th>
+                      <th class="highlight-orange">Coût total des travaux (€ NR + I)</th>
+                      <th class="highlight-orange">Date de relocation</th>
+                      <th class="highlight-orange">Durée du gel (mois)</th>
+                      <th>Loyer actuel (€/m²)</th>
+                      <th class="highlight-orange">Loyer futur (€/m²)</th>
+                      <th class="highlight-orange">Nb Parking affectés</th>
+                      <th>Loyer actuel (€ avec pkg)</th>
+                      <th class="highlight-grey">Loyer futur (€ avec pkg)</th>
+                      <th class="highlight-grey">Saisie ok ?</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor="let item of data">
+                      <td>{{item.locataire}}</td>
+                      <td>{{item.nb_lots}}</td>
+                      <td>{{item.num_lot}}</td>
+                      <td>{{item.type_lot}}</td>
+                      <td>{{item.etage}}</td>
+                      <td>{{item.surface}}</td>
+                      <td>{{item.date_dispo}}</td>
+                      <td class="bordered">{{item.strat_app}}</td>
+                      <td>{{item.date_tenant_departure}}</td>
+                      <td>{{item.construction_length}}</td>
+                      <td>{{item.cost_construction}}</td>
+                      <td>{{item.date_relocation}}</td>
+                      <td>{{item.freeze_length}}</td>
+                      <td>{{item.loyer_actuel}}</td>
+                      <td>{{item.loyer_futur}}</td>
+                      <td>{{item.nb_aff_pkg}}</td>
+                      <td>{{item.loyer_actuel_pkg}}</td>
+                      <td>{{item.loyer_futur_pkg}}</td>
+                      <td><input type="checkbox" [checked]="item.input_check"></td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+  <app-footer></app-footer>
+</body>
